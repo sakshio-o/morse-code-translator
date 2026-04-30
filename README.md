@@ -31,21 +31,106 @@ It is specifically designed as an **assistive communication tool for speech-impa
 
 ## Project Preview
 
-###  System Architecture
+### International Morse codes
 
-![System Architecture](images/system_architecture.png)
+<p align="center">
+  <img src="imgs/Int.png" width="500"/>
+</p>
 
-###  Circuit Diagram
+### System Architecture
 
-![Circuit Diagram](images/circuit.png)
+<p align="center">
+  <img src="imgs/ad.png" width="500"/>
+</p>
 
-###  Prototype
+### Encoding Output
 
-![Prototype](images/prototype.png)
+<p align="center">
+  <img src="imgs/enc.png" width="500"/>
+</p>
 
-###  Output Example
+### Decoding Output
 
-![Output](images/output.png)
+<p align="center">
+  <img src="imgs/dec.png" width="500"/>
+</p>
+
+### Setup / Hardware
+
+<p align="center">
+  <img src="imgs/setup.png" width="500"/>
+</p>
+
+---
+
+## Project Structure
+
+```
+morse-code-translator/
+│
+├── imgs/                      # Project images
+│   ├── Int.png
+│   ├── ad.png
+│   ├── enc.png
+│   ├── dec.png
+│   └── setup.png
+│
+├── button_to_morse.ino       # Handles button input → Morse signals
+├── ledchar.ino               # LED + character output logic
+├── Morse_code                # Old version
+├── Final_code                # Morse mapping / logic file and Final integrated system code
+│
+└── README.md
+```
+
+---
+
+## 🧠 Code Explanation
+
+### 1. `button_to_morse.ino`
+
+* Reads push button inputs
+* Detects:
+
+  * Short press → dot (.)
+  * Long press → dash (-)
+* Sends Morse sequence
+
+---
+
+### 2. `ledchar.ino`
+
+* Converts decoded Morse → character
+* Controls LED / output feedback
+* Displays characters
+
+---
+
+### 3. `Final_code`
+
+* Contains Morse dictionary
+* Maps:
+
+  ```
+  .- → A
+  -... → B
+  ```
+* Used for decoding logic
+
+* Integrates all modules:
+
+  * Input handling
+  * Decoding
+  * LCD display
+  * Audio output
+* This is the **main runnable file**
+
+---
+
+## Important Note
+
+Only **upload and run `Final_code` in Arduino IDE**
+Other `.ino` files act as modular components / references.
 
 ---
 
