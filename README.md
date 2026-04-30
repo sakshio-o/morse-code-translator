@@ -51,12 +51,12 @@ It is specifically designed as an **assistive communication tool for speech-impa
 
 ## Features
 
-* ✔ Real-time Morse code decoding
-* ✔ Dual input system (Dot / Dash buttons)
-* ✔ LCD text output
-* ✔ Audio feedback for each input
-* ✔ Custom Morse code system (unique patterns + shortcut words)
-* ✔ Assistive communication support
+*  Real-time Morse code decoding
+*  Dual input system (Dot / Dash buttons)
+*  LCD text output
+*  Audio feedback for each input
+*  Custom Morse code system (unique patterns + shortcut words)
+*  Assistive communication support
 
 ---
 
