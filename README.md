@@ -266,7 +266,7 @@ cd morse-code-translator
 
 ### 3. Upload Code
 
-* Open `main.ino`
+* Open files
 * Select Arduino UNO
 * Upload
 
