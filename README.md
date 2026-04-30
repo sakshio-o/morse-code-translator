@@ -85,7 +85,7 @@ morse-code-translator/
 
 ---
 
-## 🧠 Code Explanation
+## Code Explanation
 
 ### 1. `button_to_morse.ino`
 
